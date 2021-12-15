@@ -405,6 +405,27 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         GitHub.md
 nothing added to commit but untracked files present (use "git add" to track)
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Desktop/Workspace/GitHub (master)
+$ git add *
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Desktop/Workspace/GitHub (master)
+$ git commit -m "Enviar o GitHub.md"
+[master (root-commit) 2bad6f7] Enviar o GitHub.md
+ 1 file changed, 410 insertions(+)
+ create mode 100644 GitHub.md
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Desktop/Workspace/GitHub (master)
+$ git push origin master
+Enter passphrase for key '/c/Users/js058/.ssh/id_ed25519':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.91 KiB | 2.91 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jssergio/GitHub.git
+ * [new branch]      master -> master
+
 
 
 
