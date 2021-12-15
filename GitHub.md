@@ -12,7 +12,6 @@ id_ed25519  id_ed25519.pub
 Verificar a chave publica gerada e copiar para a conta GitHub
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
 $ cat id_ed25519.pub
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGgpQ6fJjX6P44bFW+3Yld6ftmKqWeGNabiYyNj5EGUT sergio2119wyz@gmail.com
 ***********************************************************************************
 Iniciar a Chave no Windows e add a chave privada para o agente
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
