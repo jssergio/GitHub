@@ -1,4 +1,4 @@
-Gerar Chave Git
+# Gerar Chave Git
 $ ssh-keygen -t ed25519 -C sergio2119wyz@gmail.com
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/c/Users/js058/.ssh/id_ed25519):
@@ -9,11 +9,11 @@ jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
 $ ls
 id_ed25519  id_ed25519.pub
 **************************************************************************
-Verificar a chave publica gerada e copiar para a conta GitHub
+# Verificar a chave publica gerada e copiar para a conta GitHub
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
 $ cat id_ed25519.pub
 ***********************************************************************************
-Iniciar a Chave no Windows e add a chave privada para o agente
+# Iniciar a Chave no Windows e add a chave privada 
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
 $ eval $(ssh-agent -s)
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
@@ -21,63 +21,54 @@ $ ssh-add id_ed25519
 Enter passphrase for id_ed25519:
 Identity added: id_ed25519 (sergio2119wyz@gmail.com)
 ************************************************************************************
-Clonar um repositorio GitHub
+# Clonar um repositorio GitHub
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/users/js058/.ssh
 $ git clone git@github.com:airbnb/javascript.git
 *********************************************************************************
-Criando um Projeto
+# Criando um Projeto
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace
 $ mkdir livro-receitas
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace
 $ cd livro-receitas/
-
+********************************************************************************
+# Inicializar o GIT
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas
 $ git init
 Initialized empty Git repository in C:/Workspace/livro-receitas/.git/
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ ls -a
 ./  ../  .git/
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ cd .git
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas/.git (GIT_DIR!)
 $ ls
 HEAD  config  description  hooks/  info/  objects/  refs/
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas/.git (GIT_DIR!)
 $ cd ..
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 *************************************************************************************
-Configuracao Inicial
-
+# Configuracao Inicial
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git config --global user.email "sergio2119wyz@gmail"
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git config --global user.name jsergio
 ****************************************************************************************
-Criando Arquivo Markdown
+# Criando Arquivo Markdown
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git add *
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git commit -m "commit inicial"
 [master (root-commit) 640f350] commit inicial
  1 file changed, 192 insertions(+)
  create mode 100644 lista.md
-*****************************************************************************************
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git status
 On branch master
 nothing to commit, working tree clean
 $ mkdir receitas
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ ls
 lista.md  receitas/
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ mv lista.md ./receitas/
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
@@ -90,24 +81,18 @@ Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         deleted:    lista.md
-
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         receitas/
-
 no changes added to commit (use "git add" and/or "git commit -a")
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git add lista.md receitas/
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git status
 On branch master
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         renamed:    lista.md -> receitas/lista.md
-
-
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 /c/Workspace/livro-receitas (master)
 $ git commit  -m "Cria pasta receitas,move arquivo para receitas"
 [master 4fbbfd1] Cria pasta receitas,move arquivo para receitas
